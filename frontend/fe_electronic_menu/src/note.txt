@@ -1,0 +1,30 @@
+Giải thích từng thư mục
+public/: Chứa các tệp tĩnh mà không cần qua quá trình build của Webpack, như index.html, favicon, và các tài nguyên khác. Các tệp trong thư mục này sẽ được sử dụng trực tiếp trong ứng dụng của bạn.
+
+src/: Thư mục chính chứa toàn bộ mã nguồn của ứng dụng ReactJS.
+
+assets/: Chứa các tài nguyên tĩnh như hình ảnh, biểu tượng, phông chữ, và các tệp CSS toàn cục (global styles).
+
+components/: Chứa các thành phần (components) dùng chung trong toàn ứng dụng, như Header, Footer, Sidebar, Button, v.v. Các thành phần này thường là các phần nhỏ và có thể tái sử dụng nhiều lần.
+
+pages/: Chứa các trang (pages) của ứng dụng. Mỗi trang là một thành phần lớn và thường đại diện cho một đường dẫn (route) trong ứng dụng. Bạn có thể tổ chức các tệp liên quan đến từng trang vào một thư mục riêng, như HomePage/ hoặc AboutPage/, để dễ quản lý.
+
+hooks/: Chứa các custom hooks của bạn. Nếu bạn cần tạo các hooks tùy chỉnh (như useAuth, useFetch, v.v.), đây là nơi để đặt chúng.
+
+services/: Chứa các dịch vụ và logic tương tác với API, như các chức năng gọi HTTP request hoặc các dịch vụ dữ liệu khác. Tổ chức các yêu cầu API trong các tệp dịch vụ giúp mã nguồn của bạn sạch sẽ và dễ bảo trì hơn.
+
+contexts/: Chứa các context API của ứng dụng nếu bạn sử dụng React Context API để quản lý state toàn cục, như AuthContext hoặc ThemeContext.
+
+utils/: Chứa các hàm tiện ích và helpers. Đây là nơi bạn có thể đặt các hàm được sử dụng chung trong toàn ứng dụng, như các hàm format date, xử lý dữ liệu, v.v.
+
+App.js: Tệp chính của ứng dụng, nơi bạn định nghĩa cấu trúc chính và routing của ứng dụng.
+
+index.js: Tệp này là điểm khởi đầu của ứng dụng, nơi ReactDOM render ứng dụng vào một phần tử DOM trong index.html.
+
+.env: Tệp này chứa các biến môi trường, ví dụ như URL API hoặc các key bảo mật.
+
+.gitignore: Tệp cấu hình Git, liệt kê những tệp hoặc thư mục không nên được đẩy lên repository.
+
+package.json: Tệp này chứa thông tin về dự án và danh sách các dependencies cần thiết cho dự án của bạn.
+
+README.md: Tệp tài liệu cho dự án, cung cấp hướng dẫn cài đặt, sử dụng, và các thông tin khác.
